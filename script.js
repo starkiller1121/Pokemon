@@ -4,24 +4,24 @@ const spinBtn = document.getElementById("spinBtn");
 
 // 視覺輪盤設定（區塊大小）
 const segments = [
-   { label: "A 賞", angle: 20, color: "#FC7373" },
-  { label: "B 賞", angle: 30, color: "#FFC560" },
-  { label: "C 賞", angle: 30, color: "#FFF286" },
-  { label: "D 賞", angle: 60, color: "#39E671" },
-  { label: "E 賞", angle: 80, color: "#0EBEF5" },
-  { label: "F 賞", angle: 100, color: "#BB8ADE" },
+   { label: "A 賞", angle: 20, color: "#FF9BC7" },
+  { label: "B 賞", angle: 30, color: "#FF9E48" },
+  { label: "C 賞", angle: 30, color: "#F7EC44" },
+  { label: "D 賞", angle: 60, color: "#1ED95A" },
+  { label: "E 賞", angle: 80, color: "#0BB8F5" },
+  { label: "F 賞", angle: 100, color: "#AE79DE" },
   { label: "特別賞", angle: 40, color: "#FCA8E5" }
 ];
 
 // 抽獎機率
 const probabilities = [
   { label: "A 賞", weight: 0 },
-  { label: "B 賞", weight: 2 },
-  { label: "C 賞", weight: 4 },
-  { label: "D 賞", weight: 6 },
-  { label: "E 賞", weight: 8 },
-  { label: "F 賞", weight: 60 },
-  { label: "銘謝惠顧", weight: 20 }
+  { label: "B 賞", weight: 0 },
+  { label: "C 賞", weight: 0 },
+  { label: "D 賞", weight: 0 },
+  { label: "E 賞", weight: 20 },
+  { label: "F 賞", weight: 50 },
+  { label: "特別賞", weight: 30 }
 ];
 
 function weightedRandom() {
@@ -101,3 +101,4 @@ spinBtn.onclick = () => {
   requestAnimationFrame(animate);
 
 };
+
