@@ -4,13 +4,13 @@ const spinBtn = document.getElementById("spinBtn");
 
 // 視覺輪盤設定（區塊大小）
 const segments = [
-  { label: "A 賞", angle: 20, color: "#EB3324" },
-  { label: "B 賞", angle: 30, color: "#FF7F27" },
-  { label: "C 賞", angle: 30, color: "#FFF200" },
-  { label: "D 賞", angle: 60, color: "#22B14C" },
-  { label: "E 賞", angle: 80, color: "#00A2E8" },
-  { label: "F 賞", angle: 100, color: "#A349A4" },
-  { label: "銘謝惠顧", angle: 40, color: "#808080" }
+   { label: "A 賞", angle: 20, color: "#FC7373" },
+  { label: "B 賞", angle: 30, color: "#FFC560" },
+  { label: "C 賞", angle: 30, color: "#FFF286" },
+  { label: "D 賞", angle: 60, color: "#39E671" },
+  { label: "E 賞", angle: 80, color: "#0EBEF5" },
+  { label: "F 賞", angle: 100, color: "#BB8ADE" },
+  { label: "特別賞", angle: 40, color: "#FCA8E5" }
 ];
 
 // 抽獎機率
@@ -99,4 +99,5 @@ spinBtn.onclick = () => {
   }
 
   requestAnimationFrame(animate);
+
 };
