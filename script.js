@@ -4,7 +4,7 @@ const spinBtn = document.getElementById("spinBtn");
 
 // 視覺輪盤設定（區塊大小）
 const segments = [
-   { label: "A 賞", angle: 20, color: "#FF9BC7" },
+   { label: "A 賞", angle: 20, color: "#F25359" },
   { label: "B 賞", angle: 30, color: "#FF9E48" },
   { label: "C 賞", angle: 30, color: "#F7EC44" },
   { label: "D 賞", angle: 60, color: "#1ED95A" },
@@ -101,4 +101,5 @@ spinBtn.onclick = () => {
   requestAnimationFrame(animate);
 
 };
+
 
